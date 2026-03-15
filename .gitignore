@@ -1,0 +1,30 @@
+# --- Local Terraform Directories ---
+# Contains provider binaries and modules
+.terraform/
+
+# --- Terraform State Files ---
+# These contain sensitive data and should be managed via a Remote Backend
+*.tfstate
+*.tfstate.*
+
+# --- Variables and Secrets ---
+# Never commit your actual credentials or variables
+*.tfvars
+*.tfvars.json
+
+# --- Override files ---
+# Used for local adjustments that shouldn't be shared
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- CLI Configuration & Logs ---
+.terraformrc
+terraform.rc
+crash.log
+*.log
+
+# --- Plan Files ---
+# Plans can contain sensitive info and are transient
+*.tfplan
