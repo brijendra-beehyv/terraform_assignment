@@ -22,6 +22,19 @@ resource "aws_s3_object" "upload_file" {
   etag = filemd5("./index.html")
 }
 
+resource "aws_s3_bucket_lifecycle_configuration" "my-s3-lifecycle" {
+  bucket = aws_s3_bucket.a-s3.id
+
+  rule {
+    id     = "delete-old-versions"
+    status = "Enabled"
+
+    noncurrent_version_expiration {
+      noncurrent_days = 30
+    }
+  }
+}
+
 resource "aws_iam_role" "ec2_role" {
   name = "ec2-s3-access-role-2"
 
@@ -62,7 +75,6 @@ resource "aws_iam_role_policy_attachment" "attach" {
   role       = aws_iam_role.ec2_role.name
   policy_arn = aws_iam_policy.s3_access.arn
 }
-
 
 output "bucket" {
   value = aws_s3_bucket.a-s3

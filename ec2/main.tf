@@ -64,6 +64,10 @@ resource "aws_instance" "a_ec2" {
   key_name               = "mumbai key"
   iam_instance_profile   = aws_iam_instance_profile.ec2_profile.name
 
+  root_block_device {
+    volume_size = 10
+  }
+
   user_data = <<EOF
 #!/bin/bash
 yum update -y
@@ -75,6 +79,11 @@ systemctl enable nginx
 
 aws s3 cp s3://${var.bucket_id}/files/index.html /home/ec2-user/
 systemctl restart nginx
+
+mkfs -t ext4 /dev/sdb
+mkdir /data
+mount /dev/sdb /data
+aws s3 cp s3://${var.bucket_id}/files/index.html /data --recursive
 EOF
 }
 
@@ -104,7 +113,7 @@ resource "aws_launch_template" "a_lt" {
   image_id      = aws_ami_from_instance.app_ami.id
   instance_type = "t2.micro"
   key_name      = "mumbai key"
-  user_data     = base64encode("systemctl restart nginx")
+  user_data     = base64encode("\nsystemctl restart nginx\n")
 
   network_interfaces {
     subnet_id       = var.subnet_id

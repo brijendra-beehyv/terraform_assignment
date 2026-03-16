@@ -10,11 +10,14 @@ variable "tg_arn" {
   type = string
 }
 
+variable "lb_id" {
+  type = string
+}
+
 resource "aws_autoscaling_group" "asg" {
-  desired_capacity   = 0
-  max_size           = 3
-  min_size           = 0
-  target_group_arns = [ var.tg_arn ]
+  desired_capacity  = 1
+  max_size          = 3
+  min_size          = 0
 
   launch_template {
     id      = var.launch_template_id
@@ -22,9 +25,7 @@ resource "aws_autoscaling_group" "asg" {
   }
 }
 
-resource "aws_autoscaling_policy" "scale_up" {
-  name                   = "my-a-policy"
+resource "aws_autoscaling_attachment" "a-asg-lb-attachment" {
   autoscaling_group_name = aws_autoscaling_group.asg.name
-  adjustment_type        = "ChangeInCapacity"
-  scaling_adjustment     = 1
+  lb_target_group_arn = var.tg_arn
 }

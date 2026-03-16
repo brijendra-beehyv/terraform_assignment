@@ -42,4 +42,5 @@ module "asg" {
   source             = "./asg"
   launch_template_id = module.ec2.launch_template_id
   tg_arn             = module.alb.target_group_arn
+  lb_id              = module.alb.lb_id
 }

@@ -75,6 +75,31 @@ resource "aws_lb_listener" "alb-listener" {
   }
 }
 
+resource "aws_lb_listener_rule" "error_rule" {
+  listener_arn = aws_lb_listener.alb-listener.arn
+  priority     = 100
+
+  action {
+    type = "fixed-response"
+
+    fixed_response {
+      content_type = "text/plain"
+      message_body = "Page not Found! Please change your search criteria!!"
+      status_code  = "404"
+    }
+  }
+
+  condition {
+    path_pattern {
+      values = ["/error"]
+    }
+  }
+}
+
 output "target_group_arn" {
   value = aws_lb_target_group.target-group.arn
+}
+
+output "lb_id" {
+  value = aws_alb.a_alb.id
 }
