@@ -1,7 +1,7 @@
 {
   "version": 4,
   "terraform_version": "1.14.6",
-  "serial": 315,
+  "serial": 405,
   "lineage": "5188b09e-b004-2bea-55d1-ba03744275d2",
   "outputs": {},
   "resources": [
@@ -24,7 +24,7 @@
             "name_prefix": "",
             "path": "/",
             "policy": "{\"Statement\":[{\"Action\":[\"s3:GetObject\",\"s3:ListBucket\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:s3:::brijendra-2003-a2\",\"arn:aws:s3:::brijendra-2003-a2/*\"]}],\"Version\":\"2012-10-17\"}",
-            "policy_id": "ANPA6D3B35VBNHVZQMLGR",
+            "policy_id": "ANPA6D3B35VBGXLS43VPF",
             "tags": {},
             "tags_all": {}
           },
@@ -52,7 +52,7 @@
           "attributes": {
             "arn": "arn:aws:iam::970330991938:role/ec2-s3-access-role-2",
             "assume_role_policy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ec2.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
-            "create_date": "2026-03-16T04:04:39Z",
+            "create_date": "2026-03-16T11:00:45Z",
             "description": "",
             "force_detach_policies": false,
             "id": "ec2-s3-access-role-2",
@@ -67,7 +67,7 @@
             "permissions_boundary": "",
             "tags": {},
             "tags_all": {},
-            "unique_id": "AROA6D3B35VBGY66EGGHW"
+            "unique_id": "AROA6D3B35VBEGVKOFXQO"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -332,7 +332,7 @@
             "storage_class": "STANDARD",
             "tags": {},
             "tags_all": {},
-            "version_id": "5Eq4LuAPOT80XeiXalx3qey2kca..86F",
+            "version_id": "0Nx20JdZR9H0VxhkIZ2Bo9GnuRkvUWqj",
             "website_redirect": ""
           },
           "sensitive_attributes": [],
@@ -367,8 +367,8 @@
                 "prefix": ""
               }
             ],
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/3abe572766862b01",
-            "arn_suffix": "app/a-alb/3abe572766862b01",
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/be43e3d1994d98fe",
+            "arn_suffix": "app/a-alb/be43e3d1994d98fe",
             "client_keep_alive": 3600,
             "connection_logs": [
               {
@@ -379,7 +379,7 @@
             ],
             "customer_owned_ipv4_pool": "",
             "desync_mitigation_mode": "defensive",
-            "dns_name": "a-alb-1254281266.ap-south-1.elb.amazonaws.com",
+            "dns_name": "a-alb-1244249585.ap-south-1.elb.amazonaws.com",
             "dns_record_client_routing_policy": null,
             "drop_invalid_header_fields": false,
             "enable_cross_zone_load_balancing": true,
@@ -397,7 +397,7 @@
                 "prefix": ""
               }
             ],
-            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/3abe572766862b01",
+            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/be43e3d1994d98fe",
             "idle_timeout": 60,
             "internal": false,
             "ip_address_type": "ipv4",
@@ -410,7 +410,7 @@
             "region": "ap-south-1",
             "secondary_ips_auto_assigned_per_subnet": null,
             "security_groups": [
-              "sg-09995016e9880221c"
+              "sg-070346fdd5031983e"
             ],
             "subnet_mapping": [
               {
@@ -418,31 +418,31 @@
                 "ipv6_address": "",
                 "outpost_id": "",
                 "private_ipv4_address": "",
-                "subnet_id": "subnet-0488546e1c890d1b1"
+                "subnet_id": "subnet-04f0c80dd19171efd"
               },
               {
                 "allocation_id": "",
                 "ipv6_address": "",
                 "outpost_id": "",
                 "private_ipv4_address": "",
-                "subnet_id": "subnet-0ea021055050d7756"
+                "subnet_id": "subnet-0a0371e93d01dff39"
               }
             ],
             "subnets": [
-              "subnet-0488546e1c890d1b1",
-              "subnet-0ea021055050d7756"
+              "subnet-04f0c80dd19171efd",
+              "subnet-0a0371e93d01dff39"
             ],
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f",
+            "vpc_id": "vpc-065d63d1d5b3323b4",
             "xff_header_processing_mode": "append",
             "zone_id": "ZP97RAFLXTNZK"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/3abe572766862b01"
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/be43e3d1994d98fe"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
           "dependencies": [
@@ -465,7 +465,7 @@
           "schema_version": 0,
           "attributes": {
             "alpn_policy": null,
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/3abe572766862b01/87b4a7046cfd0b03",
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1",
             "certificate_arn": null,
             "default_action": [
               {
@@ -476,12 +476,12 @@
                 "jwt_validation": [],
                 "order": 1,
                 "redirect": [],
-                "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
+                "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
                 "type": "forward"
               }
             ],
-            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/3abe572766862b01/87b4a7046cfd0b03",
-            "load_balancer_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/3abe572766862b01",
+            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1",
+            "load_balancer_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/be43e3d1994d98fe",
             "mutual_authentication": [],
             "port": 80,
             "protocol": "HTTP",
@@ -514,7 +514,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/3abe572766862b01/87b4a7046cfd0b03"
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsInVwZGF0ZSI6MzAwMDAwMDAwMDAwfX0=",
           "dependencies": [
@@ -557,7 +557,7 @@
                 "type": "fixed-response"
               }
             ],
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/3abe572766862b01/87b4a7046cfd0b03/e01679818c6c1acd",
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1/b58625466c1667b7",
             "condition": [
               {
                 "host_header": [],
@@ -575,8 +575,8 @@
                 "source_ip": []
               }
             ],
-            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/3abe572766862b01/87b4a7046cfd0b03/e01679818c6c1acd",
-            "listener_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/3abe572766862b01/87b4a7046cfd0b03",
+            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1/b58625466c1667b7",
+            "listener_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1",
             "priority": 100,
             "region": "ap-south-1",
             "tags": {},
@@ -586,7 +586,7 @@
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/3abe572766862b01/87b4a7046cfd0b03/e01679818c6c1acd"
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:listener-rule/app/a-alb/be43e3d1994d98fe/db25c7ba7cca0ef1/b58625466c1667b7"
           },
           "private": "bnVsbA==",
           "dependencies": [
@@ -611,8 +611,8 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
-            "arn_suffix": "targetgroup/test-tg/620e052a8467da15",
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
+            "arn_suffix": "targetgroup/test-tg/5fec732f2b34a58d",
             "connection_termination": null,
             "deregistration_delay": "300",
             "health_check": [
@@ -628,11 +628,11 @@
                 "unhealthy_threshold": 2
               }
             ],
-            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
+            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
             "ip_address_type": "ipv4",
             "lambda_multi_value_headers_enabled": false,
             "load_balancer_arns": [
-              "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/3abe572766862b01"
+              "arn:aws:elasticloadbalancing:ap-south-1:970330991938:loadbalancer/app/a-alb/be43e3d1994d98fe"
             ],
             "load_balancing_algorithm_type": "round_robin",
             "load_balancing_anomaly_mitigation": "off",
@@ -686,12 +686,12 @@
               }
             ],
             "target_type": "instance",
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
-            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15"
+            "arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d"
           },
           "private": "bnVsbA==",
           "dependencies": [
@@ -711,12 +711,12 @@
           "schema_version": 0,
           "attributes": {
             "availability_zone": null,
-            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15,i-0833af2101af38b93,80",
+            "id": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d,i-06fe6b51450b76717,80",
             "port": 80,
             "quic_server_id": null,
             "region": "ap-south-1",
-            "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
-            "target_id": "i-0833af2101af38b93"
+            "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
+            "target_id": "i-06fe6b51450b76717"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -726,8 +726,8 @@
             "port": 80,
             "quic_server_id": null,
             "region": "ap-south-1",
-            "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
-            "target_id": "i-0833af2101af38b93"
+            "target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
+            "target_id": "i-06fe6b51450b76717"
           },
           "private": "bnVsbA==",
           "dependencies": [
@@ -753,7 +753,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-09995016e9880221c",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-070346fdd5031983e",
             "description": "Allow incoming HTTP Connections",
             "egress": [
               {
@@ -770,7 +770,7 @@
                 "to_port": 0
               }
             ],
-            "id": "sg-09995016e9880221c",
+            "id": "sg-070346fdd5031983e",
             "ingress": [
               {
                 "cidr_blocks": [
@@ -794,13 +794,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "sg-09995016e9880221c",
+            "id": "sg-070346fdd5031983e",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6OTAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
@@ -820,10 +820,10 @@
         {
           "schema_version": 0,
           "attributes": {
-            "autoscaling_group_name": "terraform-20260316092005712400000001",
+            "autoscaling_group_name": "terraform-20260316110508426600000001",
             "elb": null,
-            "id": "terraform-20260316092005712400000001-20260316092020687500000002",
-            "lb_target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
+            "id": "terraform-20260316110508426600000001-20260316110509975100000002",
+            "lb_target_group_arn": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
             "region": "ap-south-1"
           },
           "sensitive_attributes": [],
@@ -855,7 +855,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:autoScalingGroup:7fd03680-491e-4259-9f92-0d83ad120457:autoScalingGroupName/terraform-20260316092005712400000001",
+            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:autoScalingGroup:6e68c572-861f-4a46-a09c-8788bbb3953d:autoScalingGroupName/terraform-20260316110508426600000001",
             "availability_zone_distribution": [
               {
                 "capacity_distribution_strategy": "balanced-best-effort"
@@ -874,14 +874,14 @@
             "context": "",
             "default_cooldown": 300,
             "default_instance_warmup": 0,
-            "desired_capacity": 0,
+            "desired_capacity": 1,
             "desired_capacity_type": "",
             "enabled_metrics": [],
             "force_delete": false,
             "force_delete_warm_pool": false,
             "health_check_grace_period": 300,
             "health_check_type": "EC2",
-            "id": "terraform-20260316092005712400000001",
+            "id": "terraform-20260316110508426600000001",
             "ignore_failed_scaling_activities": false,
             "initial_lifecycle_hook": [],
             "instance_maintenance_policy": [],
@@ -889,8 +889,8 @@
             "launch_configuration": "",
             "launch_template": [
               {
-                "id": "lt-0d740afc6e55a8ba0",
-                "name": "terraform-20260316083417892000000001",
+                "id": "lt-0b56b5f850b0a20dc",
+                "name": "terraform-20260316110502478400000003",
                 "version": "$Latest"
               }
             ],
@@ -901,7 +901,7 @@
             "min_elb_capacity": null,
             "min_size": 0,
             "mixed_instances_policy": [],
-            "name": "terraform-20260316092005712400000001",
+            "name": "terraform-20260316110508426600000001",
             "name_prefix": "terraform-",
             "placement_group": "",
             "predicted_capacity": 0,
@@ -911,18 +911,18 @@
             "suspended_processes": [],
             "tag": [],
             "target_group_arns": [
-              "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15"
+              "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d"
             ],
             "termination_policies": [],
             "timeouts": null,
             "traffic_source": [
               {
-                "identifier": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/620e052a8467da15",
+                "identifier": "arn:aws:elasticloadbalancing:ap-south-1:970330991938:targetgroup/test-tg/5fec732f2b34a58d",
                 "type": "elbv2"
               }
             ],
             "vpc_zone_identifier": [
-              "subnet-0488546e1c890d1b1"
+              "subnet-0a0371e93d01dff39"
             ],
             "wait_for_capacity_timeout": "10m",
             "wait_for_elb_capacity": null,
@@ -957,8 +957,8 @@
           "schema_version": 0,
           "attributes": {
             "adjustment_type": "ChangeInCapacity",
-            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:2980c346-3600-4058-bf71-363f6f982348:autoScalingGroupName/terraform-20260316092005712400000001:policyName/scale-in",
-            "autoscaling_group_name": "terraform-20260316092005712400000001",
+            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:7e8826da-d49b-458f-81df-a939ff39707d:autoScalingGroupName/terraform-20260316110508426600000001:policyName/scale-in",
+            "autoscaling_group_name": "terraform-20260316110508426600000001",
             "cooldown": 0,
             "enabled": true,
             "estimated_instance_warmup": 0,
@@ -1002,8 +1002,8 @@
           "schema_version": 0,
           "attributes": {
             "adjustment_type": "ChangeInCapacity",
-            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:383de05f-81b0-46a8-a0f4-5c65548e3f7a:autoScalingGroupName/terraform-20260316092005712400000001:policyName/scale-out",
-            "autoscaling_group_name": "terraform-20260316092005712400000001",
+            "arn": "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:8f0c16a8-e59c-4d03-a9ec-c0f3d95bce19:autoScalingGroupName/terraform-20260316110508426600000001:policyName/scale-out",
+            "autoscaling_group_name": "terraform-20260316110508426600000001",
             "cooldown": 0,
             "enabled": true,
             "estimated_instance_warmup": 0,
@@ -1048,7 +1048,7 @@
           "attributes": {
             "actions_enabled": true,
             "alarm_actions": [
-              "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:383de05f-81b0-46a8-a0f4-5c65548e3f7a:autoScalingGroupName/terraform-20260316092005712400000001:policyName/scale-out"
+              "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:8f0c16a8-e59c-4d03-a9ec-c0f3d95bce19:autoScalingGroupName/terraform-20260316110508426600000001:policyName/scale-out"
             ],
             "alarm_description": "",
             "alarm_name": "cpu-high",
@@ -1056,21 +1056,21 @@
             "comparison_operator": "GreaterThanThreshold",
             "datapoints_to_alarm": 0,
             "dimensions": {
-              "AutoScalingGroupName": "terraform-20260316092005712400000001"
+              "AutoScalingGroupName": "terraform-20260316110508426600000001"
             },
             "evaluate_low_sample_count_percentiles": "",
             "evaluation_periods": 2,
             "extended_statistic": "",
             "id": "cpu-high",
-            "insufficient_data_actions": null,
+            "insufficient_data_actions": [],
             "metric_name": "CPUUtilization",
             "metric_query": [],
             "namespace": "AWS/EC2",
-            "ok_actions": null,
+            "ok_actions": [],
             "period": 120,
             "region": "ap-south-1",
             "statistic": "Average",
-            "tags": null,
+            "tags": {},
             "tags_all": {},
             "threshold": 40,
             "threshold_metric_id": "",
@@ -1113,7 +1113,7 @@
           "attributes": {
             "actions_enabled": true,
             "alarm_actions": [
-              "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:2980c346-3600-4058-bf71-363f6f982348:autoScalingGroupName/terraform-20260316092005712400000001:policyName/scale-in"
+              "arn:aws:autoscaling:ap-south-1:970330991938:scalingPolicy:7e8826da-d49b-458f-81df-a939ff39707d:autoScalingGroupName/terraform-20260316110508426600000001:policyName/scale-in"
             ],
             "alarm_description": "",
             "alarm_name": "cpu-low",
@@ -1121,21 +1121,21 @@
             "comparison_operator": "LessThanThreshold",
             "datapoints_to_alarm": 0,
             "dimensions": {
-              "AutoScalingGroupName": "terraform-20260316092005712400000001"
+              "AutoScalingGroupName": "terraform-20260316110508426600000001"
             },
             "evaluate_low_sample_count_percentiles": "",
             "evaluation_periods": 2,
             "extended_statistic": "",
             "id": "cpu-low",
-            "insufficient_data_actions": null,
+            "insufficient_data_actions": [],
             "metric_name": "CPUUtilization",
             "metric_query": [],
             "namespace": "AWS/EC2",
-            "ok_actions": null,
+            "ok_actions": [],
             "period": 120,
             "region": "ap-south-1",
             "statistic": "Average",
-            "tags": null,
+            "tags": {},
             "tags_all": {},
             "threshold": 30,
             "threshold_metric_id": "",
@@ -1177,7 +1177,7 @@
           "schema_version": 0,
           "attributes": {
             "architecture": "x86_64",
-            "arn": "arn:aws:ec2:ap-south-1::image/ami-0367137cf67a77089",
+            "arn": "arn:aws:ec2:ap-south-1::image/ami-0d299e16bed890e2d",
             "boot_mode": "uefi-preferred",
             "deprecation_time": "",
             "description": "",
@@ -1188,22 +1188,22 @@
                 "encrypted": false,
                 "iops": 3000,
                 "outpost_arn": "",
-                "snapshot_id": "snap-012983df3c72dcf94",
+                "snapshot_id": "snap-0d9b6a93721a78ed8",
                 "throughput": 125,
-                "volume_size": 8,
+                "volume_size": 10,
                 "volume_type": "gp3"
               }
             ],
             "ena_support": true,
             "ephemeral_block_device": [],
             "hypervisor": "xen",
-            "id": "ami-0367137cf67a77089",
+            "id": "ami-0d299e16bed890e2d",
             "image_location": "970330991938/app-server-ami",
             "image_owner_alias": "",
             "image_type": "machine",
             "imds_support": "v2.0",
             "kernel_id": "",
-            "last_launched_time": "2026-03-16T08:35:58Z",
+            "last_launched_time": "",
             "manage_ebs_snapshots": true,
             "name": "app-server-ami",
             "owner_id": "970330991938",
@@ -1213,9 +1213,9 @@
             "ramdisk_id": "",
             "region": "ap-south-1",
             "root_device_name": "/dev/xvda",
-            "root_snapshot_id": "snap-012983df3c72dcf94",
+            "root_snapshot_id": "snap-0d9b6a93721a78ed8",
             "snapshot_without_reboot": null,
-            "source_instance_id": "i-0833af2101af38b93",
+            "source_instance_id": "i-06fe6b51450b76717",
             "sriov_net_support": "simple",
             "tags": {},
             "tags_all": {},
@@ -1250,11 +1250,11 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1::snapshot/snap-0ba8cb3f9008c5479",
+            "arn": "arn:aws:ec2:ap-south-1::snapshot/snap-0c0f9eac6fa0c922b",
             "data_encryption_key_id": "",
             "description": "",
             "encrypted": false,
-            "id": "snap-0ba8cb3f9008c5479",
+            "id": "snap-0c0f9eac6fa0c922b",
             "kms_key_id": "",
             "outpost_arn": "",
             "owner_alias": "",
@@ -1266,7 +1266,7 @@
             "tags_all": {},
             "temporary_restore_days": null,
             "timeouts": null,
-            "volume_id": "vol-0b1cd75bd3c7769ee",
+            "volume_id": "vol-0e55dce601e49124d",
             "volume_size": 8
           },
           "sensitive_attributes": [],
@@ -1295,12 +1295,12 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:volume/vol-0b1cd75bd3c7769ee",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:volume/vol-0e55dce601e49124d",
             "availability_zone": "ap-south-1a",
-            "create_time": "2026-03-16T08:18:38Z",
+            "create_time": "2026-03-16T11:01:56Z",
             "encrypted": false,
             "final_snapshot": false,
-            "id": "vol-0b1cd75bd3c7769ee",
+            "id": "vol-0e55dce601e49124d",
             "iops": 3000,
             "kms_key_id": "",
             "multi_attach_enabled": false,
@@ -1341,7 +1341,7 @@
           "schema_version": 0,
           "attributes": {
             "arn": "arn:aws:iam::970330991938:instance-profile/ec2-instance-profile",
-            "create_date": "2026-03-16T06:47:51Z",
+            "create_date": "2026-03-16T11:00:47Z",
             "id": "ec2-instance-profile",
             "name": "ec2-instance-profile",
             "name_prefix": "",
@@ -1349,7 +1349,7 @@
             "role": "ec2-s3-access-role-2",
             "tags": {},
             "tags_all": {},
-            "unique_id": "AIPA6D3B35VBFEDGXP5XM"
+            "unique_id": "AIPA6D3B35VBPNMFGSHLO"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -1371,7 +1371,7 @@
           "schema_version": 2,
           "attributes": {
             "ami": "ami-051a31ab2f4d498f5",
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:instance/i-0833af2101af38b93",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:instance/i-06fe6b51450b76717",
             "associate_public_ip_address": false,
             "availability_zone": "ap-south-1a",
             "capacity_reservation_specification": [
@@ -1406,7 +1406,7 @@
                 "tags": {},
                 "tags_all": {},
                 "throughput": 125,
-                "volume_id": "vol-0b1cd75bd3c7769ee",
+                "volume_id": "vol-0e55dce601e49124d",
                 "volume_size": 8,
                 "volume_type": "gp3"
               }
@@ -1425,7 +1425,7 @@
             "host_id": "",
             "host_resource_group_arn": null,
             "iam_instance_profile": "ec2-instance-profile",
-            "id": "i-0833af2101af38b93",
+            "id": "i-06fe6b51450b76717",
             "instance_initiated_shutdown_behavior": "stop",
             "instance_lifecycle": "",
             "instance_market_options": [],
@@ -1459,11 +1459,11 @@
             "primary_network_interface": [
               {
                 "delete_on_termination": true,
-                "network_interface_id": "eni-0f9f55097c5600d8e"
+                "network_interface_id": "eni-008bd21d820eae85a"
               }
             ],
-            "primary_network_interface_id": "eni-0f9f55097c5600d8e",
-            "private_dns": "ip-10-0-0-20.ap-south-1.compute.internal",
+            "primary_network_interface_id": "eni-008bd21d820eae85a",
+            "private_dns": "ip-10-0-0-30.ap-south-1.compute.internal",
             "private_dns_name_options": [
               {
                 "enable_resource_name_dns_a_record": false,
@@ -1471,7 +1471,7 @@
                 "hostname_type": "ip-name"
               }
             ],
-            "private_ip": "10.0.0.20",
+            "private_ip": "10.0.0.30",
             "public_dns": "",
             "public_ip": "",
             "region": "ap-south-1",
@@ -1485,7 +1485,7 @@
                 "tags": {},
                 "tags_all": {},
                 "throughput": 125,
-                "volume_id": "vol-0a281bb559aab5c3d",
+                "volume_id": "vol-024b3227a7ec7ec0d",
                 "volume_size": 10,
                 "volume_type": "gp3"
               }
@@ -1495,24 +1495,24 @@
             "security_groups": [],
             "source_dest_check": true,
             "spot_instance_request_id": "",
-            "subnet_id": "subnet-0488546e1c890d1b1",
+            "subnet_id": "subnet-0a0371e93d01dff39",
             "tags": {},
             "tags_all": {},
             "tenancy": "default",
             "timeouts": null,
-            "user_data": "#!/bin/bash\nyum update -y\nyum upgrade -y\nyum install nginx -y\n\nsystemctl start nginx\nsystemctl enable nginx\n\naws s3 cp s3://brijendra-2003-a2/files/index.html /home/ec2-user/\nsystemctl restart nginx\n\nmkfs -t ext4 /dev/sdb\nmkdir /data\nmount /dev/sdb /data\naws s3 cp s3://brijendra-2003-a2/files/index.html /data --recursive\n",
+            "user_data": "#!/bin/bash\nyum update -y\nyum upgrade -y\nyum install nginx -y\n\nsystemctl start nginx\nsystemctl enable nginx\n\naws s3 cp s3://brijendra-2003-a2/files/index.html /usr/share/nginx/html/\nsystemctl restart nginx\n\nmkfs -t ext4 /dev/sdb\nmkdir /data\nmount /dev/sdb /data\naws s3 cp s3://brijendra-2003-a2/files/index.html /data --recursive\n",
             "user_data_base64": null,
             "user_data_replace_on_change": false,
             "volume_tags": null,
             "vpc_security_group_ids": [
-              "sg-09d86ad3d2d5ab45d"
+              "sg-028e61f5fbda89140"
             ]
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "i-0833af2101af38b93",
+            "id": "i-06fe6b51450b76717",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMCwicmVhZCI6OTAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMiJ9",
@@ -1537,7 +1537,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:launch-template/lt-0d740afc6e55a8ba0",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:launch-template/lt-0b56b5f850b0a20dc",
             "block_device_mappings": [],
             "capacity_reservation_specification": [],
             "cpu_options": [],
@@ -1550,20 +1550,20 @@
             "enclave_options": [],
             "hibernation_options": [],
             "iam_instance_profile": [],
-            "id": "lt-0d740afc6e55a8ba0",
-            "image_id": "ami-0367137cf67a77089",
+            "id": "lt-0b56b5f850b0a20dc",
+            "image_id": "ami-0d299e16bed890e2d",
             "instance_initiated_shutdown_behavior": "",
             "instance_market_options": [],
             "instance_requirements": [],
             "instance_type": "t2.micro",
             "kernel_id": "",
             "key_name": "mumbai key",
-            "latest_version": 4,
+            "latest_version": 1,
             "license_specification": [],
             "maintenance_options": [],
             "metadata_options": [],
             "monitoring": [],
-            "name": "terraform-20260316083417892000000001",
+            "name": "terraform-20260316110502478400000003",
             "name_prefix": "terraform-",
             "network_interfaces": [
               {
@@ -1588,9 +1588,9 @@
                 "primary_ipv6": "",
                 "private_ip_address": "",
                 "security_groups": [
-                  "sg-09d86ad3d2d5ab45d"
+                  "sg-028e61f5fbda89140"
                 ],
-                "subnet_id": "subnet-0488546e1c890d1b1"
+                "subnet_id": "subnet-0a0371e93d01dff39"
               }
             ],
             "network_performance_options": [],
@@ -1633,7 +1633,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-09d86ad3d2d5ab45d",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-028e61f5fbda89140",
             "description": "Managed by Terraform",
             "egress": [
               {
@@ -1650,7 +1650,7 @@
                 "to_port": 64000
               }
             ],
-            "id": "sg-09d86ad3d2d5ab45d",
+            "id": "sg-028e61f5fbda89140",
             "ingress": [
               {
                 "cidr_blocks": [
@@ -1700,13 +1700,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "sg-09d86ad3d2d5ab45d",
+            "id": "sg-028e61f5fbda89140",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6OTAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
@@ -1728,13 +1728,13 @@
           "attributes": {
             "device_name": "/dev/sdb",
             "force_detach": null,
-            "id": "vai-3440665157",
-            "instance_id": "i-0833af2101af38b93",
+            "id": "vai-4231937938",
+            "instance_id": "i-06fe6b51450b76717",
             "region": "ap-south-1",
             "skip_destroy": null,
             "stop_instance_before_detaching": null,
             "timeouts": null,
-            "volume_id": "vol-0b1cd75bd3c7769ee"
+            "volume_id": "vol-0e55dce601e49124d"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -1766,7 +1766,7 @@
             "id": "admin-2",
             "name": "admin-2",
             "path": "/",
-            "unique_id": "AGPA6D3B35VBMRSKVTTEY"
+            "unique_id": "AGPA6D3B35VBGJSW5NHIP"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -1812,7 +1812,7 @@
           "schema_version": 0,
           "attributes": {
             "group": "admin-2",
-            "id": "admin-2-20260316101757081000000001",
+            "id": "admin-2-20260316110046412100000001",
             "policy_arn": "arn:aws:iam::aws:policy/AdministratorAccess"
           },
           "sensitive_attributes": [],
@@ -1846,7 +1846,7 @@
             "tags_all": {
               "Role": "DevOps"
             },
-            "unique_id": "AIDA6D3B35VBLYKTM7I7N"
+            "unique_id": "AIDA6D3B35VBMKZQGOAWG"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -1867,7 +1867,7 @@
             "encrypted_password": null,
             "id": "devops-user-2",
             "key_fingerprint": null,
-            "password": "rg(vx2EmMOmn@$9dIX+B",
+            "password": "YW(C0]B|h^|J$3IDtm1T",
             "password_length": 20,
             "password_reset_required": true,
             "pgp_key": null,
@@ -1908,7 +1908,7 @@
             "availability_zone": "ap-south-1b",
             "backup_retention_period": 7,
             "backup_target": "region",
-            "backup_window": "17:19-17:49",
+            "backup_window": "19:55-20:25",
             "blue_green_update": [],
             "ca_cert_identifier": "rds-ca-rsa2048-g1",
             "character_set_name": "",
@@ -1936,16 +1936,16 @@
             "final_snapshot_identifier": null,
             "hosted_zone_id": "Z2VFMSZA74J7XZ",
             "iam_database_authentication_enabled": false,
-            "id": "db-UPPEXZ2NZTXHNWJX57RZRTDT4E",
+            "id": "db-RDGHAFBICTS4TQF6RDILYXNPMM",
             "identifier": "my-database",
             "identifier_prefix": "",
             "instance_class": "db.t3.micro",
             "iops": 0,
             "kms_key_id": "",
-            "latest_restorable_time": "2026-03-16T10:37:43Z",
+            "latest_restorable_time": "2026-03-16T11:12:12Z",
             "license_model": "general-public-license",
             "listener_endpoint": [],
-            "maintenance_window": "mon:09:09-mon:09:39",
+            "maintenance_window": "thu:06:33-thu:07:03",
             "manage_master_user_password": null,
             "master_user_secret": [],
             "master_user_secret_kms_key_id": null,
@@ -1971,7 +1971,7 @@
               "my-db-replica"
             ],
             "replicate_source_db": "",
-            "resource_id": "db-UPPEXZ2NZTXHNWJX57RZRTDT4E",
+            "resource_id": "db-RDGHAFBICTS4TQF6RDILYXNPMM",
             "restore_to_point_in_time": [],
             "s3_import": [],
             "skip_final_snapshot": true,
@@ -1988,7 +1988,7 @@
             "upgrade_storage_config": null,
             "username": "admin",
             "vpc_security_group_ids": [
-              "sg-097977a3adaea573a"
+              "sg-05ecae1af2e272082"
             ]
           },
           "sensitive_attributes": [
@@ -2036,7 +2036,7 @@
             "availability_zone": "ap-south-1a",
             "backup_retention_period": 0,
             "backup_target": "region",
-            "backup_window": "17:19-17:49",
+            "backup_window": "19:55-20:25",
             "blue_green_update": [],
             "ca_cert_identifier": "rds-ca-rsa2048-g1",
             "character_set_name": "",
@@ -2064,7 +2064,7 @@
             "final_snapshot_identifier": null,
             "hosted_zone_id": "Z2VFMSZA74J7XZ",
             "iam_database_authentication_enabled": false,
-            "id": "db-Y7Z3J6EZBWTBDMKMBWORTIGSAM",
+            "id": "db-PAAYGO7RIHVGNBNUKBAVS5BY5M",
             "identifier": "my-db-replica",
             "identifier_prefix": "",
             "instance_class": "db.t3.micro",
@@ -2073,7 +2073,7 @@
             "latest_restorable_time": "",
             "license_model": "general-public-license",
             "listener_endpoint": [],
-            "maintenance_window": "mon:09:09-mon:09:39",
+            "maintenance_window": "thu:06:33-thu:07:03",
             "manage_master_user_password": null,
             "master_user_secret": [],
             "master_user_secret_kms_key_id": null,
@@ -2097,7 +2097,7 @@
             "replica_mode": "",
             "replicas": [],
             "replicate_source_db": "my-database",
-            "resource_id": "db-Y7Z3J6EZBWTBDMKMBWORTIGSAM",
+            "resource_id": "db-PAAYGO7RIHVGNBNUKBAVS5BY5M",
             "restore_to_point_in_time": [],
             "s3_import": [],
             "skip_final_snapshot": true,
@@ -2114,7 +2114,7 @@
             "upgrade_storage_config": null,
             "username": "admin",
             "vpc_security_group_ids": [
-              "sg-097977a3adaea573a"
+              "sg-05ecae1af2e272082"
             ]
           },
           "sensitive_attributes": [
@@ -2161,8 +2161,8 @@
             "name_prefix": "",
             "region": "ap-south-1",
             "subnet_ids": [
-              "subnet-0488546e1c890d1b1",
-              "subnet-0ea021055050d7756"
+              "subnet-04f0c80dd19171efd",
+              "subnet-0a0371e93d01dff39"
             ],
             "supported_network_types": [
               "IPV4"
@@ -2173,7 +2173,7 @@
             "tags_all": {
               "Name": "rds-subnet-group"
             },
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -2196,7 +2196,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-097977a3adaea573a",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:security-group/sg-05ecae1af2e272082",
             "description": "Managed by Terraform",
             "egress": [
               {
@@ -2213,7 +2213,7 @@
                 "to_port": 0
               }
             ],
-            "id": "sg-097977a3adaea573a",
+            "id": "sg-05ecae1af2e272082",
             "ingress": [
               {
                 "cidr_blocks": [
@@ -2237,13 +2237,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "sg-097977a3adaea573a",
+            "id": "sg-05ecae1af2e272082",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6OTAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
@@ -2263,14 +2263,14 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:internet-gateway/igw-0181ead8f89b52b99",
-            "id": "igw-0181ead8f89b52b99",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:internet-gateway/igw-045fb36e5d58ec2ec",
+            "id": "igw-045fb36e5d58ec2ec",
             "owner_id": "970330991938",
             "region": "ap-south-1",
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
@@ -2291,8 +2291,8 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:route-table/rtb-0cec9d8a868a64ae0",
-            "id": "rtb-0cec9d8a868a64ae0",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:route-table/rtb-0b570ca9e4cc1b3ec",
+            "id": "rtb-0b570ca9e4cc1b3ec",
             "owner_id": "970330991938",
             "propagating_vgws": [],
             "region": "ap-south-1",
@@ -2303,7 +2303,7 @@
                 "core_network_arn": "",
                 "destination_prefix_list_id": "",
                 "egress_only_gateway_id": "",
-                "gateway_id": "igw-0181ead8f89b52b99",
+                "gateway_id": "igw-045fb36e5d58ec2ec",
                 "ipv6_cidr_block": "",
                 "local_gateway_id": "",
                 "nat_gateway_id": "",
@@ -2316,13 +2316,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "rtb-0cec9d8a868a64ae0",
+            "id": "rtb-0b570ca9e4cc1b3ec",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMH19",
@@ -2344,10 +2344,10 @@
           "schema_version": 0,
           "attributes": {
             "gateway_id": "",
-            "id": "rtbassoc-0d2395e6cbbfde6bc",
+            "id": "rtbassoc-0511aacec8aafa865",
             "region": "ap-south-1",
-            "route_table_id": "rtb-0cec9d8a868a64ae0",
-            "subnet_id": "subnet-0ea021055050d7756",
+            "route_table_id": "rtb-0b570ca9e4cc1b3ec",
+            "subnet_id": "subnet-04f0c80dd19171efd",
             "timeouts": null
           },
           "sensitive_attributes": [],
@@ -2372,7 +2372,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:subnet/subnet-0ea021055050d7756",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:subnet/subnet-04f0c80dd19171efd",
             "assign_ipv6_address_on_creation": false,
             "availability_zone": "ap-south-1b",
             "availability_zone_id": "aps1-az3",
@@ -2382,7 +2382,7 @@
             "enable_lni_at_device_index": 0,
             "enable_resource_name_dns_a_record_on_launch": false,
             "enable_resource_name_dns_aaaa_record_on_launch": false,
-            "id": "subnet-0ea021055050d7756",
+            "id": "subnet-04f0c80dd19171efd",
             "ipv4_ipam_pool_id": null,
             "ipv4_netmask_length": null,
             "ipv6_cidr_block": "",
@@ -2399,13 +2399,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "subnet-0ea021055050d7756",
+            "id": "subnet-04f0c80dd19171efd",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
@@ -2425,7 +2425,7 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:subnet/subnet-0488546e1c890d1b1",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:subnet/subnet-0a0371e93d01dff39",
             "assign_ipv6_address_on_creation": false,
             "availability_zone": "ap-south-1a",
             "availability_zone_id": "aps1-az1",
@@ -2435,7 +2435,7 @@
             "enable_lni_at_device_index": 0,
             "enable_resource_name_dns_a_record_on_launch": false,
             "enable_resource_name_dns_aaaa_record_on_launch": false,
-            "id": "subnet-0488546e1c890d1b1",
+            "id": "subnet-0a0371e93d01dff39",
             "ipv4_ipam_pool_id": null,
             "ipv4_netmask_length": null,
             "ipv6_cidr_block": "",
@@ -2452,13 +2452,13 @@
             "tags": {},
             "tags_all": {},
             "timeouts": null,
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "subnet-0488546e1c890d1b1",
+            "id": "subnet-0a0371e93d01dff39",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
@@ -2478,17 +2478,17 @@
         {
           "schema_version": 1,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:vpc/vpc-0aa13d0c820196a9f",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:vpc/vpc-065d63d1d5b3323b4",
             "assign_generated_ipv6_cidr_block": false,
             "cidr_block": "10.0.0.0/24",
-            "default_network_acl_id": "acl-013d2ac409decf4d8",
-            "default_route_table_id": "rtb-0d3e2c83641b00841",
-            "default_security_group_id": "sg-0016175336fba56b2",
+            "default_network_acl_id": "acl-0f35e2a4a9d6c583d",
+            "default_route_table_id": "rtb-0db6e00ad31eb6a12",
+            "default_security_group_id": "sg-0e48fa98470b17bea",
             "dhcp_options_id": "dopt-02148f3d55d38e959",
             "enable_dns_hostnames": false,
             "enable_dns_support": true,
             "enable_network_address_usage_metrics": false,
-            "id": "vpc-0aa13d0c820196a9f",
+            "id": "vpc-065d63d1d5b3323b4",
             "instance_tenancy": "default",
             "ipv4_ipam_pool_id": null,
             "ipv4_netmask_length": null,
@@ -2497,7 +2497,7 @@
             "ipv6_cidr_block_network_border_group": "",
             "ipv6_ipam_pool_id": "",
             "ipv6_netmask_length": 0,
-            "main_route_table_id": "rtb-0d3e2c83641b00841",
+            "main_route_table_id": "rtb-0db6e00ad31eb6a12",
             "owner_id": "970330991938",
             "region": "ap-south-1",
             "tags": {},
@@ -2507,7 +2507,7 @@
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "vpc-0aa13d0c820196a9f",
+            "id": "vpc-065d63d1d5b3323b4",
             "region": "ap-south-1"
           },
           "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
@@ -2524,7 +2524,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "arn": "arn:aws:ec2:ap-south-1:970330991938:vpc-endpoint/vpce-0f8b5ecfc7ce033fe",
+            "arn": "arn:aws:ec2:ap-south-1:970330991938:vpc-endpoint/vpce-04a7a51d9a0afe8cc",
             "auto_accept": null,
             "cidr_blocks": [
               "52.219.156.0/22",
@@ -2546,7 +2546,7 @@
                 "private_dns_specified_domains": []
               }
             ],
-            "id": "vpce-0f8b5ecfc7ce033fe",
+            "id": "vpce-04a7a51d9a0afe8cc",
             "ip_address_type": "ipv4",
             "network_interface_ids": [],
             "owner_id": "970330991938",
@@ -2557,7 +2557,7 @@
             "requester_managed": false,
             "resource_configuration_arn": "",
             "route_table_ids": [
-              "rtb-0d3e2c83641b00841"
+              "rtb-0db6e00ad31eb6a12"
             ],
             "security_group_ids": [],
             "service_name": "com.amazonaws.ap-south-1.s3",
@@ -2574,13 +2574,13 @@
             },
             "timeouts": null,
             "vpc_endpoint_type": "Gateway",
-            "vpc_id": "vpc-0aa13d0c820196a9f"
+            "vpc_id": "vpc-065d63d1d5b3323b4"
           },
           "sensitive_attributes": [],
           "identity_schema_version": 0,
           "identity": {
             "account_id": "970330991938",
-            "id": "vpce-0f8b5ecfc7ce033fe",
+            "id": "vpce-04a7a51d9a0afe8cc",
             "region": "ap-south-1"
           },
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
