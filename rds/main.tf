@@ -6,8 +6,8 @@ variable "vpc_id" {
   type = string
 }
 
-variable "subnet_id" {
-  type = string
+variable "subnet_ids" {
+  type = list(string)
 }
 
 variable "ec2_instance_id" {
@@ -35,7 +35,7 @@ resource "aws_security_group" "rds_sg" {
 
 resource "aws_db_subnet_group" "rds_subnet" {
   name       = "rds-subnet-group"
-  subnet_ids = [var.subnet_id]
+  subnet_ids = var.subnet_ids
 
   tags = {
     Name = "rds-subnet-group"
@@ -47,9 +47,9 @@ resource "aws_db_instance" "main" {
 
   engine         = "mysql"
   engine_version = "8.0"
-  instance_class = "db.t2.micro"
+  instance_class = "db.t3.micro"
 
-  allocated_storage = 20
+  allocated_storage = 10
 
   db_name  = "appdb"
   username = "admin"
@@ -60,13 +60,14 @@ resource "aws_db_instance" "main" {
 
   publicly_accessible = false
   skip_final_snapshot = true
+  backup_retention_period = 7
 }
 
 resource "aws_db_instance" "read_replica" {
   identifier = "my-db-replica"
 
   replicate_source_db = aws_db_instance.main.identifier
-  instance_class      = "db.t2.micro"
+  instance_class      = "db.t3.micro"
 
   publicly_accessible = false
   skip_final_snapshot = true
