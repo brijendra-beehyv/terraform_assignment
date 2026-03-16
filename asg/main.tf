@@ -14,6 +14,7 @@ variable "lb_id" {
   type = string
 }
 
+
 resource "aws_autoscaling_group" "asg" {
   desired_capacity  = 0
   max_size          = 3

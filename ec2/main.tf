@@ -18,6 +18,7 @@ variable "role_name" {
   type = string
 }
 
+
 resource "aws_security_group" "a_sg" {
   name   = "a_sg"
   vpc_id = var.vpc_id
@@ -77,7 +78,7 @@ yum install nginx -y
 systemctl start nginx
 systemctl enable nginx
 
-aws s3 cp s3://${var.bucket_id}/files/index.html /home/ec2-user/
+aws s3 cp s3://${var.bucket_id}/files/index.html /usr/share/nginx/html/
 systemctl restart nginx
 
 mkfs -t ext4 /dev/sdb
@@ -120,6 +121,7 @@ resource "aws_launch_template" "a_lt" {
     security_groups = [aws_security_group.a_sg.id]
   }
 }
+
 
 output "instance_id" {
   value = aws_instance.a_ec2.id

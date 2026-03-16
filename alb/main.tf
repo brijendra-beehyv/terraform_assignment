@@ -14,6 +14,7 @@ variable "ec2_instance_id" {
   type = string
 }
 
+
 resource "aws_security_group" "a_alb_sg" {
   name        = "web-server"
   description = "Allow incoming HTTP Connections"
@@ -95,6 +96,7 @@ resource "aws_lb_listener_rule" "error_rule" {
     }
   }
 }
+
 
 output "target_group_arn" {
   value = aws_lb_target_group.target-group.arn
